@@ -26,13 +26,11 @@ Connect to the shell of the pod:
 
 ### dd server latency test (small ios) example
 
-    echo 3 > /proc/sys/vm/drop_caches && \
     dd if=/dev/zero of=/data/testfile bs=512 count=1000 oflag=dsync && \
     rm -f /data/testfile
     
 ### dd server throughput (write speed) example
 
-    echo 3 > /proc/sys/vm/drop_caches && \
     dd if=/dev/zero of=/data/testfile bs=1G count=1 oflag=dsync && \
     rm -f /data/testfile
 
