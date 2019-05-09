@@ -14,7 +14,7 @@ Remove all quotas and limits from the project if they exist.
 
 Run the template with the openshift-storage-bench application name with a storage volume size of 2Gi allocated in the glusterfs-storage storageclass:
 
-    oc process -f templates/openshift-storage-bench-template.yaml \
+    oc process -f openshift-storage-bench-template.yaml \
       -p APP_NAME=openshift-storage-bench -p VOLUME_SIZE=10Gi \
       -p STORAGE_CLASS=glusterfs-storage | oc create -f -
       
