@@ -90,13 +90,8 @@ objects:
         from:
           kind: ImageStreamTag
           name: ${APP_NAME}:latest
-          namespace: ${PROJECT_NAME}
       type: ImageChange
 parameters:
-- description: name of the project
-  name: PROJECT_NAME
-  value: bench
-  required: true
 - description: name of the app
   name: APP_NAME
   value: openshift-storage-bench
