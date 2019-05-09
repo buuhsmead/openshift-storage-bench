@@ -18,7 +18,6 @@ objects:
   kind: ImageStream
   metadata:
     name: openshift-storage-bench
-    namespace: ${PROJECT_NAME}
   spec:
     lookupPolicy:
       local: false
